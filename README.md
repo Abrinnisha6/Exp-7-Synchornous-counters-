@@ -6,7 +6,7 @@
 
 ### SOFTWARE REQUIRED:   Quartus prime
 
-### THEORY 
+### THEORY: 
 
 ## UP COUNTER 
 
@@ -51,21 +51,23 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 
-### Procedure
+### Procedure:
 
 Step 1: Module Declaration. module is a keywords defined in Verilog . Step 2: Input-Output Delecaration. Clock and reset are the inputs. Step 3: Declare the always keyword. 
 Step 4: Use if loop for the functionality.
 Step 5: Assign the counter_up & _down.
 Step 6: End the module
 
-### PROGRAM 
 
+### PROGRAM:
+
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: A.Abrin Nisha
 RegisterNumber:  22008695
-```
+
 UP COUNTER
-```
+
 module uc(input CLK,input reset,output[0:3]counter);
 reg[0:3] counter_up;
 always@(posedge CLKor posedge reset)
@@ -91,8 +93,9 @@ counter_down<=counter_down-4'd1;
 end
 assign counter=counter_down;
 endmodule
+```
 
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+### RTL LOGIC UP COUNTER AND DOWN COUNTER:
 
 UP COUNTER
 
@@ -102,7 +105,7 @@ DOWN COUNTER
 
 ![](./down.png)
 
-### TIMING DIGRAMS FOR COUNTER  
+### TIMING DIGRAMS FOR COUNTER:
 
 UP COUNTER
 
@@ -112,7 +115,7 @@ DOWN COUNTER
 
 ![](./downtd.png)
 
-### TRUTH TABLE 
+### TRUTH TABLE: 
 
 UP COUNTER
 
@@ -122,6 +125,6 @@ DOWN COUNTER
 
 ![](./downtt.png)
 
-### RESULTS 
+### RESULTS:
 
 4 bit up and down counters are implemented and its functionality is validated successfully.
